@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Titanic Data Cleaning and EDA</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			border: 1px solid #ddd;
+			padding: 8px;
+			text-align: left;
+		}
+		th {
+			background-color: #f2f2f2;
+		}
+	</style>
+</head>
+<body>
+	<h1>Titanic Data Cleaning and EDA</h1>
+	<h2>Data Cleaning</h2>
+	<p>Handling missing values:</p>
+	<ul>
+		<li>Age: filled with mean age (29.7)</li>
+		<li>Embarked: filled with most frequent value (Southampton)</li>
+	</ul>
+	<p>Encoding categorical variables:</p>
+	<ul>
+		<li>Sex: male=0, female=1</li>
+		<li>Embarked: Southampton=0, Cherbourg=1, Queenstown=2</li>
+	</ul>
+	<h2>Exploratory Data Analysis (EDA)</h2>
+	<h3>Variable Relationships</h3>
+	<table>
+		<tr>
+			<th>Variable 1</th>
+			<th>Variable 2</th>
+			<th>Relationship</th>
+		</tr>
+		<tr>
+			<td>Age</td>
+			<td>Survived</td>
+			<td>Negative correlation (older passengers less likely to survive)</td>
+		</tr>
+		<tr>
+			<td>Sex</td>
+			<td>Survived</td>
+			<td>Female passengers more likely to survive</td>
+		</tr>
+		<tr>
+			<td>Pclass</td>
+			<td>Survived</td>
+			<td>Higher-class passengers more likely to survive</td>
+		</tr>
+	</table>
+	<h3>Patterns and Trends</h3>
+	<ul>
+		<li>Most passengers embarked from Southampton</li>
+		<li> Majority of passengers were in third-class</li>
+		<li>Survival rate decreases with age</li>
+	</ul>
+	<h3>Visualizations</h3>
+	<p>Age Distribution:</p>
+	<img src="age_distribution.png" alt="Age Distribution">
+	<p>Survival Rate by Sex:</p>
+	<img src="survival_rate_by_sex.png" alt="Survival Rate by Sex">
+	<p>Survival Rate by Class:</p>
+	<img src="survival_rate_by_class.png" alt="Survival Rate by Class">
+</body>
+</html>
+
